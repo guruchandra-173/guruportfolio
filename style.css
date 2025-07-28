@@ -1,0 +1,365 @@
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    padding: 20px;
+  }
+  
+  nav .logo {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  nav .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  nav .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .hero {
+    text-align: center;
+   
+    
+  }
+  
+  .hero h1 {
+    font-size: 2.5em;
+    color: #1909f8;
+  }
+
+ 
+  .hero p {
+    font-size: 1.2em;
+    color: #faf8f8;
+  }
+  
+  section {
+    padding: 60px 40px;
+    max-width: 400px;
+    margin: 0 auto;
+    color: red;
+   
+  }
+  
+  section h2 {
+    margin-bottom: 15px;
+    color: #e0f807;
+  }
+  
+  ul {
+    list-style: disc;
+    margin-left: 20px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    text-color: black;
+    color: #fff;
+    margin-top: 40px;
+  }
+
+  
+
+  
+
+
+
+ 
+
+  /* Horizantal Menu */
+  
+  .horizontal-menu {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+   
+    padding: 20px 0;
+  }
+  
+  .horizontal-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background 0.3s;
+  }
+  
+  .horizontal-menu a:hover {
+    background-color: #555;
+  }
+  
+
+
+
+  /* Resume Toggle */
+
+  .box {
+   max-width: 800px;
+  
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+    color: white;
+  }
+  
+  .content {
+    height: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .see-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #00f0ff;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .extra-content {
+    display: none;
+    margin-top: 10px;
+  }
+  
+  /* Toggle switch behavior using checkbox */
+  .toggle {
+    display: none;
+  }
+  
+  .toggle:checked + .see-more + .extra-content {
+    display: block;
+  }
+  
+  
+
+
+
+/* aLl */
+
+
+
+ 
+
+
+  body {
+    margin: 0;
+    padding: 40px;
+    background: #1a1a1a;
+    font-family: Arial, sans-serif;
+    color: white;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .section-box {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+    width: 220px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    border: 1px solid #ccc;
+  }
+  
+  .content {
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 8px;
+    border-radius: 6px;
+  }
+  
+  .see-more {
+    display: block;
+    margin-top: 10px;
+    color: #00f0ff;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .toggle {
+    display: none;
+  }
+  
+  .more-content {
+    display: none;
+    margin-top: 10px;
+  }
+  
+  .toggle:checked + .see-more + .more-content {
+    display: block;
+  }
+  
+
+
+
+
+  
+
+  
+  .navbar {
+    padding: 15px 30px;
+    
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+  }
+  
+  .nav-links li {
+    position: relative;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #007acc;
+    min-width: 200px;
+    max-height: 200px;
+    overflow-y: auto;
+    border-radius: 8px;
+    top: 100%;
+    left: 0;
+    z-index: 100;
+    
+  }
+  
+  .dropdown-content a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #005fa3;
+  }
+  
+  /* Important: Hover on parent keeps dropdown visible */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+
+
+
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .section-box {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    height: 300px; /* Fixed height */
+    overflow: hidden;
+    text-align: center;
+    border: 1px solid #ccc;
+  }
+  
+  .scroll-content {
+    margin-top: 15px;
+    max-height: 220px;
+    overflow-y: auto;
+    text-align: left;
+    padding-right: 10px;
+  }
+  
+  .scroll-content p {
+    margin: 10px 0;
+    padding: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+  }
+  
+
+
+  body {
+    margin: 0;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+   
+  
+    /* ✅ Background Image */
+    background: url("images/background.jpg") no-repeat center center fixed;
+    background-size: cover;
+  }
+
+
+
+
+  .logo-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Hidden photo box */
+  .photo-box {
+    position: absolute;
+    top: 120%; /* below the logo */
+    left: 0;
+    display: none;
+    width: 150px;
+    padding: 10px;
+    background:green;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    z-index: 999;
+  }
+  
+  /* Show photo only when hovering over logo */
+  .logo-container:hover .photo-box {
+    display: block;
+  }
+  
+  .photo-box img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
